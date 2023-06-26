@@ -586,20 +586,18 @@
             let email = document.getElementById("email").value;
             let phone = document.getElementById("phone").value;
             let message = document.getElementById("message").value;
-            let body = "Name: " + name + "<br> Email: " + email + "<br> Phone: " + phone + "<br> Message: ";
+            let body = "Name: " + name + "<br> Email: " + email + "<br> Phone: " + phone + "<br> message: ";
             console.log(body);
 
 
             Email.send({
-                SecureToken: "C973D7AD-F097-4B95-91F4-40ABC5567812",
                 Host: "smtp.elasticemail.com",
                 Username: "jhashivam2008@gmail.com",
-                Password: "50F6D1B7C15696690FB14CDD70F61CD1379F",
+                Password: "1CC2968A098E69ACA145B313753A76424677",
                 To: 'gdsc.acem@gmail.com',
-                From: "shivam.jhacse@acem.edu.in",
-                Subject: "Email us with any questions Shivam",
+                From: "gdsc.acem@gmail.com",
+                Subject: "Email us with any questions",
                 Body: body,
-
             }).then(
                 message => alert("message sent Successfully")
             );
